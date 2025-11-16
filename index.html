@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">Aurelia <br> <span>pilates studio</span></a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-list-item"><a href="#about">Про нас</a></li>
+            <li class="header__navigation-list-item"><a href="#prices">Ціни</a></li>
+            <li class="header__navigation-list-item"><a href="#info">Інструктори</a></li>
+            <li class="header__navigation-list-item"><a href="#reviews">Відгуки</a></li>
+            <li class="header__navigation-list-item"><a href="#contact">Контакти</a></li>
+          </ul>
+        </nav>
+        <button class="burger__menu-adaptation" hidden>
+          <img src="img/burger.svg" alt="Burger">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+    <!--фонове відео-->
+      <video class="hero__video"
+         src="img/background_video.mp4"
+         autoplay
+         muted
+         loop
+         playsinline
+         preload="auto">
+      </video>
+
+      <div class="container">
+        <div class="hero__inner">
+          <h3 class="hero__title">Знайди свій баланс. Зміцни тіло. Звільни розум.</h3>
+          <button class="hero__button">ПОЧАТИ</button>
+        </div> 
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <img src="img/about-img.png" alt="About pilates" class="about__img">
+          <div class="about__right">
+            <h3 class="about__right-title">Про нашу студію</h3>
+            <p class="about__right-text">Студія пілатесу Aurelia — це команда професіоналів, які допомогли тисячі людей
+              досягти своїх цілей.
+              Ми віримо, що ключ до успіху — це індивідуальний підхід та глибоке розуміння методики. Від точності
+              виконання вправ до дружньої підтримки — наші тренери створюють усі умови, щоб ви могли зосередитися на
+              собі. Приходьте, щоб змінити своє тіло, покращити здоров’я та знайти внутрішній баланс.</p>
+            <button class="about__right-button">ЗАПИСАТИСЯ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__inner">
+          <div class="benefits__left">
+            <h3 class="benefits__left-title">Чим корисний пілатес?</h3>
+            <p class="benefits__left-text">Джозеф Пілатес називав свою систему "Контрологія", що підкреслює її основну
+              ідею: повний контроль над тілом за допомогою розуму. Він вважав, що фізична підготовка — це перша
+              передумова щастя, а його метод — це повна координація тіла, розуму та духу. Засновник стверджував:
+              "Ви будете почуватися краще після десяти занять, виглядати краще після двадцяти, і мати зовсім нове тіло
+              після тридцяти".</p>
+          </div>
+          <img src="img/benefits-img.svg" alt="" class="benefits__img">
+        </div>
+      </div>
+    </section>
+
+    <section class="prices" id="prices">
+      <div class="container">
+        <div class="prices__inner">
+          <h4 class="prices__title">Варіанти занять та ціни</h4>
+          <div class="prices__box">
+            <button class="prices__box-adaptation-button" hidden>
+              <img src="img/arrow-left-adaptation.svg" alt="">
+            </button>
+            <div class="prices__box-item prices__box-item-adaptation">
+              <p class="prices__box-item-title">Персональне тренування</p>
+              <p class="prices__box-item-price">1000₴</p>
+              <button class="prices__box-item-button">ОБРАТИ</button>
+            </div>
+            <div class="prices__box-item">
+              <p class="prices__box-item-title">Групове тренування</p>
+              <p class="prices__box-item-price">700₴ </p>
+              <button class="prices__box-item-button">ОБРАТИ</button>
+            </div>
+            <div class="prices__box-item prices__box-item-adaptation">
+              <p class="prices__box-item-title">Парне тренування</p>
+              <p class="prices__box-item-price">900₴</p>
+              <button class="prices__box-item-button">ОБРАТИ</button>
+            </div>
+            <button class="prices__box-adaptation-button" hidden>
+              <img src="img/arrow-right-adaptation.svg" alt="">
+            </button>
+          </div>
+          <div class="prices__items-bar" hidden>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info" id="info">
+      <div class="container">
+        <div class="info__inner">
+          <h3 class="info__title">Наші інструктори</h3>
+          <div class="info__box">
+            <div class="info__box-item">
+              <img src="img/info-1.png" alt="Юлія">
+              <p class="info__box-item-text">Юлія <br>
+                10 років досвіду
+                Спеціалізується на заняттях з вагітними та жінками після пологів
+              </p>
+            </div>
+            <div class="info__box-item">
+              <img src="img/info-2.png" alt="Анна">
+              <p class="info__box-item-text">Анна <br>
+                6 років у сфері
+                Проводить вправи на корекцію постави та пілатес на реформерах</p>
+            </div>
+            <div class="info__box-item">
+              <img src="img/info-3.png" alt="Катя">
+              <p class="info__box-item-text">Катя <br>
+                5 років навчає пілатесу
+                Спеціалізується на відновленні після травм
+              </p>
+            </div>
+            <div class="info__box-item">
+              <img src="img/info-4.png" alt="Соня">
+              <p class="info__box-item-text">Соня <br>
+                2 роки у Aurelia
+                Авторка власних програм по зміцненні м’язів кору</p>
+            </div>
+          </div>
+          <button class="info__button">ЗАБРОНЮВАТИ ЗАНЯТТЯ</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__inner">
+          <div class="reviews__left">
+            <h3 class="reviews__left-title">Відгуки клієнтів</h3>
+            <p class="reviews__left-name">Людмила</p>
+            <p class="reviews__left-text">Хочу поділитися своїми враженнями про студію пілатесу Aurelia. Почала
+              займатися декілька місяців тому. Дуже сподобалося! Зручне розташування, затишна атмосфера, цікаві заняття,
+              сучасне обладнання і саме головне, це чудовий тренер, професіонал, дуже уважна, відповідальна і позитивна
+              людина Юля!!!</p>
+            <div class="text-navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <img src="img/review-img.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h3 class="contact__title">Стань кращою версією себе!</h3>
+        <form class="contact__form" action="#contact">
+          <label for="name" class="form__name">
+            Ім’я
+            <input type="text" id="name">
+          </label>
+          <label for="num" class="form__number">
+            Номер телефону
+            <input type="tel" id="num">
+          </label>
+          <button class="contact__form-button">ЗВ’ЯЗАТИСЯ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <a href="#" class="header__logo footer__logo">Aurelia <br> <span>pilates studio</span></a>
+          <img src="img/footer-img.svg" alt="" class="footer__img">
+        </div>
+        <div class="footer__right">
+          <div class="footer__contacts">
+            <p class="footer__title">Контакти</p>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-list-item">aurelia.pilates@gmail.com</li>
+              <li class="footer__contacts-list-item">тел: +380 95 444 77 88</li>
+            </ul>
+            <div class="footer__socials">
+              <a href="#" class="footer__socials-link">
+                <img src="img/imsta.svg" alt="">
+              </a>
+              <a href="#" class="footer__socials-link">
+                <img src="img/facebook.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footer__address">
+            <p class="footer__title">Адреса</p>
+            <p class="foot__address-street">вул. Лавандова, Київ</p>
+          </div>
+          <div class="footer__schedule">
+            <p class="footer__title">Графік роботи</p>
+            <p class="footer__schedule-days">Пн – Пт: </p>
+            <p class="footer__schedule-time">08:00 – 20:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
